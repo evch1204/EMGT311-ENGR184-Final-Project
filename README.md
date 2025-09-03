@@ -1,51 +1,125 @@
-EMGT 311 Final Project
+# EMGT 311 - Engineering Management Final Project
 
-This repository contains the code and analysis for my EMGT 311 Final Project. The project involves loading, cleaning, and analyzing experimental data from CSV files. The notebook demonstrates data preprocessing, feature engineering, and statistical modeling to evaluate patterns and outcomes related to the dataset.
+## Project Overview
 
-Repository Contents
+This project focuses on **Electromyography (EMG) Data Analysis and Risk Classification** using machine learning techniques. The goal is to analyze EMG signals from different individuals and classify them into high-risk and low-risk categories based on various physiological parameters.
 
-EMGT_311_Final_Project_code.ipynb
-Jupyter Notebook containing all preprocessing, exploratory data analysis, and modeling steps.
+## Project Structure
 
-/data/ (optional)
-Placeholder folder for input CSV datasets. These files are not included in the repository but should be placed here when running the notebook.
+```
+EMGT_311_Final_Project/
+├── EMGT_311_Final_Project_code.ipynb    # Main Jupyter notebook with analysis
+├── EMGT311-ENGR184-Final Project Report.pdf      # Detailed project report
+├── EMGT311-ENGR184-Final Project Presentation.pdf # Project presentation slides
+├── EMGT311-ENGR184-Final Project.zip            # Compressed project files
+└── README.md                                    # This file
+```
 
-Requirements
+## Dataset Description
 
-To run the notebook, you will need Python 3.9+ and the following packages:
+The project analyzes four main datasets:
+- **P1_High.csv** - Person 1 High Risk EMG data
+- **P1_Low.csv** - Person 1 Low Risk EMG data  
+- **P2_High.csv** - Person 2 High Risk EMG data
+- **P2_Low.csv** - Person 2 Low Risk EMG data
 
-pip install pandas numpy matplotlib seaborn scikit-learn
+Each dataset contains 56 columns of EMG signal data with the first 5 rows containing metadata.
 
+## Features
 
-Additional packages (such as scipy, statsmodels, or notebook) may be required depending on your environment.
+### Data Processing
+- CSV data loading and preprocessing
+- Data cleaning and normalization
+- Feature engineering and scaling
+- Outlier detection and removal
 
-Usage
+### Machine Learning Models
+- **Logistic Regression** - Binary classification (Low Risk vs High Risk)
+- **Random Forest Classifier** - Ensemble learning approach
+- **Principal Component Analysis (PCA)** - Dimensionality reduction
 
-Clone this repository:
+### Analysis and Visualization
+- Raw EMG signal plotting
+- Model performance evaluation
+- Confusion matrix analysis
+- ROC curve analysis
+- Classification reports
+- Feature importance analysis
 
-git clone https://github.com/<your-username>/EMGT_311_Final_Project.git
-cd EMGT_311_Final_Project
+## Technologies Used
 
+- **Python** - Primary programming language
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computing
+- **Scikit-learn** - Machine learning algorithms
+- **Matplotlib** - Data visualization
+- **Seaborn** - Statistical data visualization
+- **Google Colab** - Cloud-based development environment
 
-Place the input CSV files in the data/ directory.
+## Key Findings
 
-Open the notebook in Jupyter:
+The project demonstrates:
+- Successful classification of EMG data into risk categories
+- Comparison of different machine learning approaches
+- Feature importance analysis for risk assessment
+- Model performance evaluation metrics
 
-jupyter notebook EMGT_311_Final_Project_code.ipynb
+## Getting Started
 
+### Prerequisites
+- Python 3.7+
+- Jupyter Notebook or Google Colab
+- Required Python packages (see requirements below)
 
-Run the cells step by step to reproduce the analysis.
+### Installation
+1. Clone or download the project files
+2. Install required dependencies:
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib seaborn
+   ```
+3. Open `EMGT_311_Final_Project_code.ipynb` in Jupyter Notebook or Google Colab
 
-Project Overview
+### Data Requirements
+- Place the CSV files in the appropriate directory structure
+- Ensure data files follow the expected format (56 columns, skip first 5 rows)
 
-Data Import & Cleaning: The dataset requires skipping metadata rows (skiprows=5) during CSV loading.
+## Usage
 
-Exploratory Data Analysis (EDA): Statistical summaries and visualization techniques are applied to understand distributions and correlations.
+1. **Data Loading**: The notebook automatically loads and processes the four EMG datasets
+2. **Preprocessing**: Data is cleaned, normalized, and prepared for analysis
+3. **Model Training**: Multiple machine learning models are trained and evaluated
+4. **Results Analysis**: Performance metrics and visualizations are generated
+5. **Risk Classification**: Final classification results for high/low risk assessment
 
-Feature Engineering: Rolling window features and transformations are generated for modeling.
+## Model Performance
 
-Modeling & Evaluation: Machine learning models are trained and compared to assess predictive performance.
+The project evaluates models using:
+- **Accuracy Score** - Overall classification accuracy
+- **Precision & Recall** - Model performance per class
+- **F1-Score** - Harmonic mean of precision and recall
+- **Confusion Matrix** - Detailed classification results
+- **ROC Curve** - Model discrimination ability
 
-Results
+## Contributing
 
-The analysis highlights key trends and validates the use of feature extraction techniques in modeling outcomes. Final results and visualizations are included directly in the notebook.
+This is a final project for EMGT 311 - Engineering Management course. For questions or issues, please refer to the project report or presentation materials.
+
+## License
+
+This project is created for educational purposes as part of the EMGT 311 course requirements.
+
+## Authors
+
+- **Course**: EMGT 311 - Engineering Management
+- **Institution**: Engineering Department
+- **Semester**: Final Project
+
+## Acknowledgments
+
+- Course instructors and teaching assistants
+- EMG data collection and preprocessing teams
+- Machine learning and data science community resources
+
+---
+
+*This README provides an overview of the EMGT 311 Final Project. For detailed analysis and results, please refer to the Jupyter notebook and project report.*
