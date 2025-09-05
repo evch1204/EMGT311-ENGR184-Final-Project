@@ -113,12 +113,14 @@ This project is created for educational purposes as part of the EMGT 311 course 
 - **Course**: EMGT 311 - Engineering Management
 - **Institution**: Engineering Department
 - **Semester**: Final Project
+- **Project**: Group Project
 
 ## Acknowledgments
 
 - Course instructors and teaching assistants
 - EMG data collection and preprocessing teams
 - Machine learning and data science community resources
+- Thank you to Isable for their contribution
 
 ---
 
